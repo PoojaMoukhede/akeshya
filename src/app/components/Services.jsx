@@ -14,7 +14,7 @@ export default function Services() {
   }, []); 
   return (
     <>
-      <div id="services" className="services ">
+      <div id="services" className="services">
         <div className="container">
           <div className="section-title text-center" data-aos="fade-up">
             <h2 className="text-center fw-bold text-uppercase mb-3">Services</h2>

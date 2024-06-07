@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Header from "../components/Header";
 import AboutUS from "../components/AboutUS";
@@ -5,6 +7,7 @@ import Services from "../components/Services";
 import Process from "../components/Process";
 import Features from "../components/Features";
 import Contact from "../components/Contact";
+import Footer from "./Footer";
 
 export default function Main() {
   return (
@@ -124,6 +127,7 @@ export default function Main() {
       <Process />
       <Features />
       <Contact />
-    </>
+      <Footer/>
+          </>
   );
 }

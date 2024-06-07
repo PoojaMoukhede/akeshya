@@ -1,26 +1,50 @@
 'use client'
 
 import React, { useEffect } from 'react';
-import PureCounter from '@srexi/purecounterjs';
+import { useRouter } from 'next/router';
 import Image from 'next/image';
+import Header from './Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import '../globals.css'
+import Footer from './Footer';
 
 export default function AboutUS() {
-    useEffect(() => {
-        new PureCounter({
-          end: 3835039, 
-          duration: 2, 
-          element: document.querySelector('.purecounter'),
-        });
-        AOS.init({
+  const router = useRouter();
+
+  useEffect(() => {
+      if (typeof window !== 'undefined') {
+          import('@srexi/purecounterjs').then((PureCounter) => {
+              new PureCounter.default({
+                  end: 3835039,
+                  duration: 2,
+                  element: document.querySelector('.purecounter'),
+              });
+          });
+      }
+
+      AOS.init({
           duration: 1000,
-        });
-      }, []);
+      });
+
+      return () => {
+          // Clean up any resources if needed
+      };
+  }, [router.pathname]);
+    // useEffect(() => {
+    //     new PureCounter({
+    //       end: 3835039, 
+    //       duration: 2, 
+    //       element: document.querySelector('.purecounter'),
+    //     });
+    //     AOS.init({
+    //       duration: 1000,
+    //     });
+    //   }, []);
   return (
     <>
+        <Header/>
       <div id="about" className="about">
         <div className="container">
           <div className="section-title pb-4" data-aos="fade-up">
@@ -109,7 +133,7 @@ export default function AboutUS() {
           </div>
         </div>
       </div>
-      <div id="counts" className="counts pt-0">
+      <div id="counts" className="counts pt-0 mb-5">
         <div className="container">
           <div className="row">
             <div
@@ -201,6 +225,7 @@ export default function AboutUS() {
           </div>
         </div>
       </div>
+      {/* <Footer/> */}
     </>
   );
 }
