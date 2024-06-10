@@ -8,6 +8,7 @@ import Process from "../components/Process";
 import Features from "../components/Features";
 import Contact from "../components/Contact";
 import Footer from "./Footer";
+import ScrollToTopButton from "./ScrollToTop";
 
 export default function Main() {
   return (
@@ -18,8 +19,14 @@ export default function Main() {
           <div className="d-flex">
             <div className="row">
               <div className="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-                <h1 data-aos="fade-up" className='heading_order'>Grow your business with Akeshya</h1>
-                <h2 data-aos="fade-up" data-aos-delay="400" className='heading_order'>
+                <h1 data-aos="fade-up" className="heading_order">
+                  Grow your business with Akeshya
+                </h1>
+                <h2
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                  className="heading_order"
+                >
                   We are team of talented website designers, developers &
                   digital marketeers
                 </h2>
@@ -127,7 +134,8 @@ export default function Main() {
       <Process />
       <Features />
       <Contact />
-      <Footer/>
-          </>
+      <Footer />
+      <ScrollToTopButton />
+    </>
   );
 }

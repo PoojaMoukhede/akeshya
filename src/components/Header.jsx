@@ -59,24 +59,24 @@ export default function Header() {
           <div className="collapse navbar-collapse w-50" id="navbarNav">
             <ul className="navbar-nav ms-auto mb-lg-0">
               <li className="nav-item">
-                <Link href="/" className="nav-link">
+                <Link href="/" className="nav-link child">
                   Home
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link href="/about" className="nav-link">
+              <li className="nav-item ">
+                <Link href="/about" className="nav-link child">
                   About
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link href="/service" className="nav-link">
+              <li className="nav-item ">
+                <Link href="/service" className="nav-link child">
                   Services
                 </Link>
               </li>
-              <li className="nav-item">
+              <li className="nav-item ">
                 <Link
                   href="/contact"
-                  className="nav-link getstarted rounded-pill text-center"
+                  className="nav-link getstarted rounded-pill text-center lastChild"
                 >
                   Contact us
                 </Link>

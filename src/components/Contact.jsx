@@ -1,16 +1,17 @@
-'use client'
+"use client";
 
 import Image from "next/image";
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 import AOS from "aos";
-import "aos/dist/aos.css"; 
+import "aos/dist/aos.css";
+import { RiPhoneLine, RiMailSendLine, RiMapPinLine } from "react-icons/ri";
 
 export default function Contact() {
-    useEffect(() => {
-        AOS.init({
-          duration: 1000,
-        });
-      }, []);
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   return (
     <>
       <section id="contact" className="contact mb-4">
@@ -40,39 +41,24 @@ export default function Contact() {
               data-aos-delay="200"
             >
               <div className="info">
-                <div className="d-flex gap-2">
-                  <Image
-                    src="/ri--map-pin-line.svg"
-                    alt=""
-                    width={36}
-                    height={36}
-                  />
+                <div className="d-flex">
+                  <RiMapPinLine className="contact_icon map" />
                   <p>
                     26-2-789, 7th street, Jyothi Nagar, Nellore, Andhra Pradesh
                     524004
                   </p>
                 </div>
 
-                <div className="d-flex gap-2">
-                  <Image
-                    src="/ri--mail-send-line.svg"
-                    alt=""
-                    width={35}
-                    height={35}
-                  />
-
-               
-                    <p>info@akeshya.com</p>
-             
+                <div className="d-flex  mb-3">
+                  <RiMailSendLine className="contact_icon" />
+                 <span>
+                 <p className="mb-0 pb-0">akeshya@outlook.com</p>
+                 <p className="mb-0 ">info@akeshya.com</p>
+                 </span>
                 </div>
 
-                <div className="d-flex gap-2">
-                  <Image
-                    src="/ri--phone-line.svg"
-                    alt=""
-                    width={36}
-                    height={36}
-                  />
+                <div className="d-flex">
+                  <RiPhoneLine className="contact_icon" />
 
                   <p>+91 94942 40922 </p>
                 </div>

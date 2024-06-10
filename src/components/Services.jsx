@@ -1,23 +1,27 @@
-'use client'
+"use client";
 
 import Image from "next/image";
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 import AOS from "aos";
-import "aos/dist/aos.css"; 
-import styles from './Services.module.css'
-
+import "aos/dist/aos.css";
+import styles from "./Services.module.css";
+import { BiWorld } from "react-icons/bi";
+import { FaDribbble } from "react-icons/fa";
+import { BiTachometer, BiFile } from "react-icons/bi";
 export default function Services() {
   useEffect(() => {
     AOS.init({
       duration: 1000,
     });
-  }, []); 
+  }, []);
   return (
     <>
       <div id="services" className="services">
         <div className="container">
           <div className="section-title text-center" data-aos="fade-up">
-            <h2 className="text-center fw-bold text-uppercase mb-3">Services</h2>
+            <h2 className="text-center fw-bold text-uppercase mb-3">
+              Services
+            </h2>
             <p className="mb-4">
               Akeshya will serve as your consultant and development partner to
               help you turn your idea into a reality.
@@ -30,16 +34,9 @@ export default function Services() {
                 className={`icon-box ${styles.iconBox}`}
                 data-aos="fade-up"
                 data-aos-delay="100"
-              > 
+              >
                 <div className="icon">
-                  <Image src="/dribbble.svg" alt="" width={36} height={36} />
-                  <Image
-                    src="/dribbble_blue.svg"
-                    alt=""
-                    width={36.5}
-                    height={36.5}
-                    className={styles.hoverImage}
-                  />
+                  <FaDribbble className="customeIcon" />
                 </div>
                 <h4 className="title">
                   <a href="#">Design</a>
@@ -60,14 +57,7 @@ export default function Services() {
                 data-aos-delay="100"
               >
                 <div className="icon">
-                  <Image src="/bx--file.svg" alt="" width={36} height={36} />
-                  <Image
-                    src="/bx--file_blue.svg"
-                    alt=""
-                    width={36.5}
-                    height={36.5}
-                    className={styles.hoverImage}
-                  />
+                  <BiFile className="customeIcon" />
                 </div>
                 <h4 className="title">
                   <a href="#">Development</a>
@@ -88,14 +78,7 @@ export default function Services() {
                 data-aos-delay="100"
               >
                 <div className="icon">
-                  <Image src="/bx--world.svg" alt="" width={36} height={36} />
-                  <Image
-                    src="/bx--world_blue.svg"
-                    alt=""
-                    width={36.5}
-                    height={36.5}
-                    className={styles.hoverImage}
-                  />
+                  <BiWorld className="customeIcon" />
                 </div>
                 <h4 className="title">
                   <a href="#">Marketing</a>
@@ -116,14 +99,7 @@ export default function Services() {
                 data-aos-delay="100"
               >
                 <div className="icon">
-                  <Image src="/bx--tachometer.svg" alt="" width={36} height={36} />
-                  <Image
-                    src="/bx--tachometer_blue.svg"
-                    alt=""
-                    width={36.5}
-                    height={36.5}
-                    className={styles.hoverImage}
-                  />
+                  <BiTachometer className="customeIcon" />
                 </div>
                 <h4 className="title">
                   <a href="#">Support</a>

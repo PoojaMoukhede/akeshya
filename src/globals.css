@@ -11,10 +11,10 @@
 #header {
   padding: 22px 0;
 }
-.logo{
+.logo {
   margin-bottom: 2px;
 }
-#navHead{
+#navHead {
   padding-top: 12px;
 }
 h1,
@@ -46,7 +46,7 @@ h6 {
   color: #14279b !important;
   text-decoration: none !important;
 }
-.nav-item .nav-link {
+.nav-item .child {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -60,9 +60,10 @@ h6 {
   font-family: "Open Sans", sans-serif !important;
   transition: 0.3s;
 }
-.nav-link:hover{
+.navbar-nav .child:hover {
   color: #14279b !important;
 }
+
 .navbar .getstarted {
   background: #14279b;
   padding: 8px 25px !important;
@@ -100,6 +101,12 @@ h6 {
   font-weight: 700;
   line-height: 56px;
   color: #14279b;
+}
+.customeIcon {
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: 700;
+  margin: 2.5px;
 }
 
 #hero h2 {
@@ -237,13 +244,17 @@ h6 {
   color: #fff;
   text-decoration: none;
 }
-.content p {
-  font-family: "Open Sans", sans-serif;
+p {
+  font-family: "Open Sans", sans-serif !important;
   color: #444444;
+  font-size: 1.045rem;
+  line-height: 1.5;
 }
-.content li {
+.content ul li {
   font-family: "Open Sans", sans-serif;
   color: #444444;
+  font-size: 1.045rem;
+  line-height: 1.5;
 }
 
 /* count */
@@ -305,7 +316,15 @@ h6 {
   transition: all 0.3s;
   z-index: -1;
 }
-
+.contact_icon {
+  color: #14279b;
+  font-size: 32px;
+}
+.map {
+  color: #14279b;
+  font-size: 52px;
+  margin-top: -8px;
+}
 .services .icon-box:hover::before {
   background: #14279b;
   right: 0;
@@ -314,7 +333,9 @@ h6 {
   height: 100%;
   border-radius: 0px;
 }
-
+.icon-box:hover .customeIcon {
+  color: #14279b;
+}
 .services .icon {
   margin: 0 auto 20px auto;
   padding-top: 10px;
@@ -345,9 +366,11 @@ h6 {
 }
 
 .services .description {
-  font-size: 15px;
+  font-size: 15.5px;
   line-height: 28px;
+  color: #444444;
   margin-bottom: 0;
+  font-family: "Open Sans", sans-serif !important;
 }
 
 .services .icon-box:hover .title a,
@@ -398,23 +421,11 @@ h6 {
   color: #5e5e5e;
 }
 
-.more-services .read-more a {
-  color: #777777;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 12px;
-  transition: 0.4s;
-}
-
-.more-services .read-more a:hover {
-  text-decoration: underline;
-}
-
 .more-services .card:hover .card-body {
   background: #14279b;
 }
 
-.more-services .card:hover .read-more a,
+.more-services .card:hover h5 p,
 .more-services .card:hover .card-title,
 .more-services .card:hover .card-title a,
 .more-services .card:hover .card-text {
@@ -472,20 +483,18 @@ h6 {
   color: #14279b;
 }
 
-.contact .contact-about p {
+.contact-about p {
   font-size: 14px;
   line-height: 24px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif !important;
   color: #888;
 }
-.contact .info {
-  color: #444444;
-}
 
-.contact .info p {
-  padding: 0 0 10px 32px;
+ .info  div p {
+  padding: 0 0 10px 15px;
   line-height: 28px;
-  font-size: 14px;
+  font-size: 15px;
+  color: #585757;
 }
 
 .contact .email-form .error-message {
@@ -651,7 +660,8 @@ h6 {
   }
 }
 
-#contact, #about_indi {
+#contact,
+#about_indi {
   margin-top: 80px;
 }
 
@@ -664,8 +674,10 @@ h6 {
 }
 
 #footer .footer-links a {
-  color: #222222;
+  color: #14279b;
   padding-left: 15px;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
   text-decoration: none !important;
 }
 
@@ -675,6 +687,6 @@ h6 {
 }
 
 #footer .footer-links a:hover {
-  color: #14279b;
+  color: #2383c4;
   text-decoration: none !important;
 }

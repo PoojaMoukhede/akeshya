@@ -12,13 +12,31 @@ export default function Footer() {
             <div className="footer-links">
               <ul className=" d-flex list-unstyled">
                 <li className="px-3">
-                  <a href="" >Terms and conditions</a>
+                  <a
+                    href="https://akeshya.com/Privacy%20policy.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Terms and conditions
+                  </a>
                 </li>
                 <li className="px-3">
-                  <a href="">Refund policy</a>
+                  <a
+                    href="https://akeshya.com/Refund%20policy.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Refund policy
+                  </a>
                 </li>
                 <li className="px-3">
-                  <a href="">Privacy policy</a>
+                  <a
+                    href="https://akeshya.com/Privacy%20policy.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Privacy policy
+                  </a>
                 </li>
               </ul>
             </div>

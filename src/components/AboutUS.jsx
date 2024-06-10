@@ -89,7 +89,7 @@ export default function AboutUS() {
                     />
                   </svg>{" "}
                   Our methodical and individual approach to each project
-                  delivers the finest possible results for your media.
+                  delivers the finest <br/> possible results for your media.
                 </li>
                 <li className="position-relative ps-4">
                   <svg
