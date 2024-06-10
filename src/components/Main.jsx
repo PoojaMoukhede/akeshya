@@ -14,12 +14,12 @@ export default function Main() {
     <>
       <Header />
       <div id="hero" className="d-flex align-items-center w-100 mt-5">
-        <div className="container ">
+        <div className="container">
           <div className="d-flex">
             <div className="row">
               <div className="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-                <h1 data-aos="fade-up">Grow your business with Akeshya</h1>
-                <h2 data-aos="fade-up" data-aos-delay="400">
+                <h1 data-aos="fade-up" className='heading_order'>Grow your business with Akeshya</h1>
+                <h2 data-aos="fade-up" data-aos-delay="400" className='heading_order'>
                   We are team of talented website designers, developers &
                   digital marketeers
                 </h2>
@@ -46,7 +46,7 @@ export default function Main() {
           </div>
         </div>
       </div>
-      <div id="clients" className="clients clients">
+      <div id="clients" className="clients">
         <div className="container">
           <div className="row">
             <div className="col-lg-2 col-md-4 col-6">

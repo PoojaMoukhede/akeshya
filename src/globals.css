@@ -1,49 +1,80 @@
-body {
-  font-family: "Raleway", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: "Kurale";
+  src: url("/fonts/Raleway.ttf");
+  font-style: medium;
+  font-weight: normal;
+  font-display: swap;
 }
 
-.navbar-brand {
+#header {
+  padding: 22px 0;
+}
+.logo{
+  margin-bottom: 2px;
+}
+#navHead{
+  padding-top: 12px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif !important;
+}
+.navbar-brand h1 {
   font-size: 30px !important;
-  font-weight: 700 !important;
+  line-height: 1 !important;
+  font-weight: 700;
   letter-spacing: 1px !important;
 }
 
-.navbar-brand,
-.navbar-brand:hover {
+.navbar-brand {
+  /* width: 145px !important; */
+  height: 35px !important;
+}
+
+.navbar-toggler {
+  width: 28px !important;
+  height: 28px !important;
+}
+.navbar-brand h1,
+.navbar-brand h1:hover {
   color: #14279b !important;
   text-decoration: none !important;
 }
-
-.navbar .nav-link {
+.nav-item .nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 10px 0 10px 30px !important;
-  font-size: 15px !important;
-  font-weight: 400 !important;
-  color: #555555 !important;
-  white-space: nowrap !important;
-  transition: 0.3s !important;
+  font-size: 15px;
+  font-weight: 400;
+  color: #555555;
+  white-space: nowrap;
+  line-height: 1.5;
+  /* letter-spacing: 0.7px; */
+  font-family: "Open Sans", sans-serif !important;
+  transition: 0.3s;
 }
-
-.navbar a i {
-  font-size: 12px;
-  margin-left: 5px;
+.nav-link:hover{
+  color: #14279b !important;
 }
-
-.navbar a:hover,
-.navbar .active,
-.navbar li:hover > a {
-  color: #14279b;
-}
-
 .navbar .getstarted {
   background: #14279b;
   padding: 8px 25px !important;
   margin-left: 30px;
+  /* width: 124px; */
   text-decoration: none;
   color: white !important;
 }
 
 .navbar .getstarted:hover {
   background: #4aa3df;
+  color: white !important;
 }
 .fixed-top {
   padding: 28px;
@@ -59,6 +90,8 @@ body {
 /* hero */
 #hero {
   height: 70vh;
+  margin-top: 70px !important;
+  padding: 60px 0;
 }
 
 #hero h1 {
@@ -427,7 +460,7 @@ body {
 
 /* contact */
 .contact {
- font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 .contact .contact-about h3 {
   font-size: 28px;
@@ -618,9 +651,7 @@ body {
   }
 }
 
-
-#about,
-#contact{
+#contact {
   margin-top: 80px;
 }
 
@@ -631,7 +662,6 @@ body {
   color: #222222;
   font-size: 14px;
 }
-
 
 #footer .footer-links a {
   color: #222222;
