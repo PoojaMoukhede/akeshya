@@ -1,9 +1,22 @@
-'use client'
+"use client";
 
-import Image from "next/image";
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 import AOS from "aos";
-import "aos/dist/aos.css"; 
+import "aos/dist/aos.css";
+import {
+  RiCalendarEventLine,
+  RiAdvertisementFill,
+  RiDiscLine,
+  RiContactsBookLine,
+  RiBarChartGroupedFill,
+  RiMapPinLine,
+  RiTodoLine,
+  RiSearchEyeLine,
+  RiPlayCircleLine,
+  RiCreativeCommonsByLine,
+  RiCodeBoxLine,
+  RiWindowLine,
+} from "react-icons/ri";
 
 export default function Features() {
   useEffect(() => {
@@ -29,13 +42,7 @@ export default function Features() {
           <div className="row" data-aos="fade-up" data-aos-delay="300">
             <div className="col-lg-3 col-md-4">
               <div className="icon-box">
-                <Image
-                  src="/icons/ri--window-line.svg"
-                  width={32}
-                  height={32}
-                  alt=""
-                  className="me-2"
-                />
+                <RiWindowLine className="me-2 window line_icon" />
                 <h3>
                   <p>Web design</p>
                 </h3>
@@ -43,13 +50,7 @@ export default function Features() {
             </div>
             <div className="col-lg-3 col-md-4 mt-4 mt-md-0">
               <div className="icon-box">
-                <Image
-                  src="/icons/ri--code-box-line.svg"
-                  width={32}
-                  height={32}
-                  alt=""
-                  className="me-2"
-                />
+                <RiCodeBoxLine className="me-2 code line_icon" />
                 <h3>
                   <p>Development</p>
                 </h3>
@@ -57,13 +58,7 @@ export default function Features() {
             </div>
             <div className="col-lg-3 col-md-4 mt-4 mt-md-0">
               <div className="icon-box">
-                <Image
-                  src="/icons/ri--creative-commons-by-line.svg"
-                  width={32}
-                  height={32}
-                  alt=""
-                  className="me-2"
-                />
+                <RiCreativeCommonsByLine className="me-2 creative line_icon" />
                 <h3>
                   <p>Branding</p>
                 </h3>
@@ -71,13 +66,7 @@ export default function Features() {
             </div>
             <div className="col-lg-3 col-md-4 mt-4 mt-lg-0">
               <div className="icon-box">
-                <Image
-                  src="/icons/ri--play-circle-line.svg"
-                  width={32}
-                  height={32}
-                  alt=""
-                  className="me-2"
-                />
+                <RiPlayCircleLine className="me-2 play line_icon" />
                 <h3>
                   <p>Media buying</p>
                 </h3>
@@ -85,13 +74,7 @@ export default function Features() {
             </div>
             <div className="col-lg-3 col-md-4 mt-4">
               <div className="icon-box">
-                <Image
-                  src="/icons/ri--search-eye-line.svg"
-                  width={32}
-                  height={32}
-                  alt=""
-                  className="me-2"
-                />
+                <RiSearchEyeLine className="me-2 eye line_icon" />
                 <h3>
                   <p>Search engine</p>
                 </h3>
@@ -99,13 +82,7 @@ export default function Features() {
             </div>
             <div className="col-lg-3 col-md-4 mt-4">
               <div className="icon-box">
-                <Image
-                  src="/icons/ri--todo-line.svg"
-                  width={32}
-                  height={32}
-                  alt=""
-                  className="me-2"
-                />
+                <RiTodoLine className="me-2 todo line_icon" />
                 <h3>
                   <p>Brand strategy</p>
                 </h3>
@@ -113,13 +90,7 @@ export default function Features() {
             </div>
             <div className="col-lg-3 col-md-4 mt-4">
               <div className="icon-box">
-                <Image
-                  src="/icons/ri--map-pin-line.svg"
-                  width={32}
-                  height={32}
-                  alt=""
-                  className="me-2"
-                />
+                <RiMapPinLine className="me-2 map_pin line_icon" />
                 <h3>
                   <p>Local search marketing</p>
                 </h3>
@@ -127,13 +98,7 @@ export default function Features() {
             </div>
             <div className="col-lg-3 col-md-4 mt-4">
               <div className="icon-box">
-                <Image
-                  src="/icons/ri--bar-chart-grouped-line.svg"
-                  width={32}
-                  height={32}
-                  alt=""
-                  className="me-2"
-                />
+                <RiBarChartGroupedFill className="me-2 bar line_icon" />
                 <h3>
                   <p>Lead Tracking & Management </p>
                 </h3>
@@ -141,13 +106,7 @@ export default function Features() {
             </div>
             <div className="col-lg-3 col-md-4 mt-4">
               <div className="icon-box">
-                <Image
-                  src="/icons/ri--contacts-book-line.svg"
-                  width={32}
-                  height={32}
-                  alt=""
-                  className="me-2"
-                />
+                <RiContactsBookLine className="me-2 cont line_icon" />
                 <h3>
                   <p>Contact management</p>
                 </h3>
@@ -155,13 +114,7 @@ export default function Features() {
             </div>
             <div className="col-lg-3 col-md-4 mt-4">
               <div className="icon-box">
-                <Image
-                  src="/icons/ri--disc-line.svg"
-                  width={32}
-                  height={32}
-                  alt=""
-                  className="me-2"
-                />
+                <RiDiscLine className="me-2 media line_icon" />
                 <h3>
                   <p>Media management</p>
                 </h3>
@@ -169,13 +122,7 @@ export default function Features() {
             </div>
             <div className="col-lg-3 col-md-4 mt-4">
               <div className="icon-box">
-                <Image
-                  src="/icons/ri--calendar-event-line.svg"
-                  width={32}
-                  height={32}
-                  alt=""
-                  className="me-2"
-                />
+                <RiCalendarEventLine className="me-2 calendar line_icon" />
                 <h3>
                   <p>Social scheduling</p>
                 </h3>
@@ -183,13 +130,7 @@ export default function Features() {
             </div>
             <div className="col-lg-3 col-md-4 mt-4">
               <div className="icon-box">
-                <Image
-                  src="/icons/ri--advertisement-fill.svg"
-                  width={32}
-                  height={32}
-                  alt=""
-                  className="me-2"
-                />
+                <RiAdvertisementFill className="me-2 ad line_icon" />
                 <h3>
                   <p>Ad retargeting</p>
                 </h3>

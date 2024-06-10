@@ -291,6 +291,9 @@ p {
 .counts .content .count-box a:hover {
   color: #6f6f6f;
 }
+.line_icon {
+  font-size: 32px;
+}
 
 /* service */
 .services .icon-box {
@@ -322,7 +325,7 @@ p {
 }
 .map {
   color: #14279b;
-  font-size: 52px;
+  font-size: 58px;
   margin-top: -8px;
 }
 .services .icon-box:hover::before {
@@ -490,7 +493,7 @@ p {
   color: #888;
 }
 
- .info  div p {
+.info div p {
   padding: 0 0 10px 15px;
   line-height: 28px;
   font-size: 15px;
@@ -690,3 +693,42 @@ p {
   color: #2383c4;
   text-decoration: none !important;
 }
+
+/* icons */
+.calendar {
+  color: #ff5828;
+}
+.ad {
+  color: #29cc61;
+}
+.media {
+  color: #b20969;
+}
+.cont {
+  color: #b2904f;
+}
+.bar{
+  color: #574bff;
+}
+.map_pin{
+  color: #dbce11;
+}
+.todo{
+  color: #ffa76e;
+}
+.eye{
+  color: #47aeff;
+}
+.play{
+  color: #e361ff;
+}
+.creative{
+  color: #e80368;
+}
+.code{
+  color: #5578ff;
+}
+.window{
+  color: #ffbb2c;
+}
+
