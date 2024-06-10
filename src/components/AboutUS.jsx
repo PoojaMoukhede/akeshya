@@ -7,7 +7,7 @@ import Header from './Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AOS from "aos";
 import "aos/dist/aos.css";
-import '../globals.css'
+// import '../globals.css'
 import Footer from './Footer';
 
 export default function AboutUS() {

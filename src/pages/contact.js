@@ -1,7 +1,8 @@
-import Footer from "@/app/components/Footer";
-import Contact from "../app/components/Contact";
-import Header from "../app/components/Header";
+import Footer from "../components/Footer";
+import Contact from "../components/Contact";
+import Header from "../components/Header";
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 export default function contact() {
   return (

@@ -85,7 +85,7 @@ export default function Contact() {
               data-aos-delay="300"
             >
               <form className="email-form" method="POST" name="contact">
-                <input type="hidden" name="form-name" value="contact" />
+                {/* <input type="hidden" name="form-name" value="contact" /> */}
                 <div className="form-group">
                   <input
                     type="text"

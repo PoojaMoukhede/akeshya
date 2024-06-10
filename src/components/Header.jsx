@@ -56,6 +56,11 @@ export default function Header() {
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li className="nav-item">
+                  <Link href="/main" className="nav-link" passHref>
+                  Home
+                  </Link>
+                </li>
                 <li className="nav-item">
                   {/* <a className="nav-link active" aria-current="page" href="#">
                     Home
@@ -64,11 +69,7 @@ export default function Header() {
                     About
                   </Link>
                 </li>
-                <li className="nav-item">
-                  <Link href="/main" className="nav-link" passHref>
-                  Home
-                  </Link>
-                </li>
+               
                 <li className="nav-item">
                   <Link href="/service" className="nav-link" passHref>
                     Services
